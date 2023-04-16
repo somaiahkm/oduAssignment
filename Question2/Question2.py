@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 dataframe = pd.read_csv(r'C:\Users\dhanu\Downloads\autos.csv', encoding = "ISO-8859-1") #ADD your directory here.
-print(dataframe)
-print("temp", dataframe["seller"].unique())
-print("Private, Business")
-print("temp1", dataframe["offerType"].unique())
-print("Offer ,Petition")
-print("temp2", dataframe["nrOfPictures"].unique())
+#print(dataframe)
+#print("temp", dataframe["seller"].unique())
+#print("Private, Business")
+#print("temp1", dataframe["offerType"].unique())
+#print("Offer ,Petition")
+#print("temp2", dataframe["nrOfPictures"].unique())
 print("**********************************************************************************************")
 ans1 = dataframe["price"].mean()
 print("3.a. ",ans1)
@@ -38,7 +38,7 @@ brandvalues = list(ansidk.values())
 brandkeys = list(ansidk.keys())
 plt.pie(brandvalues, labels=brandkeys)
 plt.pie(brandvalues, labels=brandkeys, autopct=lambda p:f'{p*sum(brandvalues)/100 :.0f} ')
-#plt.show()
+plt.show()
 
 
 
@@ -57,7 +57,7 @@ ans6 = dataframe['gearbox'].value_counts().to_dict()
 gearboxvalues = list(ans6.values())
 gearboxkeys = list(ans6.keys())
 plt.pie(gearboxvalues, labels=gearboxkeys, autopct=lambda p:f'{p*sum(gearboxvalues)/100 :.0f} ')
-#plt.show()
+plt.show()
 
 
 
