@@ -1,0 +1,85 @@
+Question 3
+1 & 2. Exploratory data analysis and justification
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Selected Features:
+-> 'seller'
+-> 'yearOfRegistration'
+-> 'gearbox'
+-> 'powerPS'
+-> 'kilometer'
+-> 'fuelType'
+-> 'brand'
+-> 'notRepair'
+
+And obviously the label, 'price'.
+
+
+-> The 'seller' feature can be considered as a feature. When translated, there are only two possible 
+values to this feature. Private and business. They are features which can weigh in on the model 
+because private sellers would want more money for the cars as they are not a huge organisation.
+But corporate sellers who sell cars as business would have margin to lower their price to increase
+their popularity, to establish themselves as the most popoular seller, they might sell a lot of cars
+for a way less profit margin than a private seller.
+
+-> 'price' must obviously be considered while training the model as this is the label for the machine 
+learning we would later build.
+
+-> 'yearOfRegistration' feature is one of the most important features. Because it has a direct impact on 
+the price of the car, the usual trend is, the older the car the lesser the money it will be sold for. 
+The newer the car, the higher will be the price. A positive value can be assigned to this parameter, because,
+higher the year, higher the price. 
+
+And there are a few corrupt data, like for 'yearOfRegistration' there are values like 9999 and 1000. The whole row 
+can be eliminated so that we can get rid of the corrupt values.
+
+-> 'fuelType' can also be considered as a valid feature. As diesel engines lasts longer than petrol engines. We select features
+when each feature has a different incfluence on the label. After training me might find out that a diesel engine parameter might give a
+higher price to the car.
+
+-> 'powerPS' is an obvious feauture as the power of the engine will be directly propotional to the price it will be sold for.
+
+-> 'kilometer' can be used as a feature, as more the car has run, the less will be the power output capability of the engine 
+and less will be the reliability of the car, therefore we can assign a strong negative value to this parameter. 
+
+-> 'gearbox' can also be considered as a valid feature as manual gear boxes last longer than automatic gear boxes. Manual gearboxes 
+are less prone to failure. The original cost of automatic gearboxes are expensive, but as this is cars being resold, they would have run 
+a sufficient amount of kilometers where automatic gear boxes are more prone to failure over time. 
+
+-> 'brand' can be considered as certain brands are just luxury car manufactures, and their price would be much higher compared to the brands
+that make cars for all economical sections of the society. 
+Brands like Mercedes, BMW are luxury car brands which will have a high cost.
+
+-> 'notRepaired' can be considered as a feature, because repairs related to the engine or to the main functional parts of the car might have an impact
+on the label. 
+
+-> 'noOfPictures' can be ignored as all the cars have the same value for this column.
+
+-> 'name' can be ignored as it nowhere impacts the  price of the car. 
+
+-> 'postalCose' can be ignored as it does not determine nor influence the price the car in any way.
+
+-> 'offerType' can be ignored as it will not influence the price heavily. 
+
+-> 'abtest' I have not understood the meaning of the title, and the values it holds, that's why I have not considered it. 
+
+-> 'vehicleType' can be ignored as it has a lot of missing values. 
+
+-> 'monthOfRegistration' will not have an influence on determining the price of the car, that's why it has been ignored. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Challenges 
+-> The main challenge was just trying to understand what the title and the values meant in english. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Model
+-> As we are predicting a quantity, it's clear that we should use a regression model.
+-> We have more than 3,00,000 elements of data, so we can choose a model which performs well with a fairly decent amount of data. 
+-> Out of 8 features that we have selected, almost all of them are important, ofcourse some are more important than the others, like 'yearOfRegistration' and 'kilometers'. 
+-> For the above reason we can use 'Ridge Regression' as almost all the features we have selected are important. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ 
+
+
+
