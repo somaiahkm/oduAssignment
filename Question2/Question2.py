@@ -17,8 +17,8 @@ print("3.b ",ans2)
 print("**********************************************************************************************")
 
 
-dataframe.drop(dataframe[dataframe['yearOfRegistration'] >= 2023].index, inplace = True)
-dataframe.drop(dataframe[dataframe['yearOfRegistration'] <= 1886].index, inplace = True)
+dataframe.drop(dataframe[dataframe['yearOfRegistration'] >= 2023].index, inplace = True) #As there are junk values like 9999 for year, I have removed all values which are greater than 2023.
+dataframe.drop(dataframe[dataframe['yearOfRegistration'] <= 1886].index, inplace = True) #As there are junk values like 1000, I have given this constraint because the first car was manufactured on 1886.
 
 ans31 = dataframe["yearOfRegistration"].max()
 ans32 = dataframe["yearOfRegistration"].min()
