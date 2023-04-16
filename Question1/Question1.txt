@@ -1,0 +1,42 @@
+Question1
+a. Backend framework
+-> Laravel
+As PHP is the primary language that works for laravel, I have experience with connecting databases using PHP and 
+retrieving queries from those databases. My familiarity with PHP is the main reason I would choose this over 
+frameworks like Django.
+
+b. Frontend frameowrk
+-> HTML and CSS
+HTML I believe is one of the most simple languages for building a front end. And with css, there a lot of already available attractive UI. Which we can 
+leverage and built our application from a base tempelate that already has a good look and feel to it. 
+
+
+c. Database 
+-> MySQL
+I feel the most comfortable using the MySQL syntax as I have quite a bit of experience in retrieving data using MySQL. 
+As it is one of the mostly used databases in the world, solutions for issues that are often encountered by developers will 
+be widely available on the internet with different approaches to solve an issue, which would enable me to learn more.
+
+
+d. version control 
+-> GIT
+
+	
+e. Storage
+-> Amazon S3
+S3, because as it's a part of the amazon web service, they provide a very high percentage of reliability for the data. And as it is elastic in nature, 
+the storage can be scaled up or down depending on the requirements of the website. As it is a part of AWS, it's always better to be a part of huge organisations, as they 
+will have be able to offer services for a lesser price and the services they provide would be highly available and highly reliable. 
+
+
+f. Web Server 
+-> Apache HTTP Server
+I would be choosing the Apache Web server because of the ease with which it can be used. You need a web server to be reliable, as it is one of the most used web servers in the 
+world, it has be to reliable and bug fixes will be provided quickly. I used a xamp server for my previous projects, and xamp uses the apache server, as I had a reliable experience with it,
+I would be choosing the above server. 
+   
+   Deployement 
+-> Heroku
+In heroku, the developer can focus on the code and not much on the infrastructure. A developer without much knowledge with the infrastructure can concentrate on just the code as the 
+environment provided by heroku is ready to go. Heroku is best for meduim sized organisations, which require medium computational capability. AWS would be best for bigger organisations with 
+more traffic. But for the above example, without having a person to look after the infrastructure, heroku would be my first pick.
