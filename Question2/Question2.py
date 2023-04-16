@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-dataframe = pd.read_csv(r'C:\Users\dhanu\Downloads\autos.csv', encoding = "ISO-8859-1")
+dataframe = pd.read_csv(r'C:\Users\dhanu\Downloads\autos.csv', encoding = "ISO-8859-1") #ADD your directory here.
 print(dataframe)
 print("temp", dataframe["seller"].unique())
 print("Private, Business")
